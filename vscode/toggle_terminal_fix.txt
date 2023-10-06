@@ -1,0 +1,4 @@
+first open the command palette (CTRL + SHIFT + "P") > Open keyboard shortcuts file > then add:
+{"key": "ctrl+,", "command": "workbench.action.terminal.toggleTerminal"}
+
+the "key" can be any shortcut combination you prefer to be for toggling the terminal in vscode

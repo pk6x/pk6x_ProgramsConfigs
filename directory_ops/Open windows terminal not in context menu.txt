@@ -1,0 +1,19 @@
+Command Prompt:
+
+"%LOCALAPPDATA%\Microsoft\WindowsApps\wt.exe" -p "Command Prompt" -d "{sourcepath|noshort|escbackslash|noterm}"
+
+@admin:"%LOCALAPPDATA%\Microsoft\WindowsApps\wt.exe" -p "Command Prompt" -d "{sourcepath|noshort|escbackslash|noterm}"
+
+PowerShell Core (v6+):
+
+"%LOCALAPPDATA%\Microsoft\WindowsApps\wt.exe" -p "PowerShell" -d "{sourcepath|noshort|escbackslash|noterm}"
+
+@admin:"%LOCALAPPDATA%\Microsoft\WindowsApps\wt.exe" -p "PowerShell" -d "{sourcepath|noshort|escbackslash|noterm}"
+
+PowerShell Windows (<=v5):
+
+"%LOCALAPPDATA%\Microsoft\WindowsApps\wt.exe" -p "Windows PowerShell" -d "{sourcepath|noshort|escbackslash|noterm}"
+
+@admin:"%LOCALAPPDATA%\Microsoft\WindowsApps\wt.exe" -p "Windows PowerShell" -d "{sourcepath|noshort|escbackslash|noterm}"
+
+The -p "<profile_name>" options must match the same "name": values in your Windows Terminal settings.json file.

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://stkb.github.io/Rewrap/#/settings-vscode?id=wrapping-to-rulers -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">:root{--docsifytabs-border-color:#ededed;--docsifytabs-border-px:1px;--docsifytabs-border-radius-px: ;--docsifytabs-margin:1.5em 0;--docsifytabs-tab-background:#f8f8f8;--docsifytabs-tab-background--active:var(--docsifytabs-content-background);--docsifytabs-tab-color:#999;--docsifytabs-tab-color--active:inherit;--docsifytabs-tab-highlight-px:3px;--docsifytabs-tab-highlight-color:var(--theme-color,currentColor);--docsifytabs-tab-padding:0.6em 1em;--docsifytabs-content-background:inherit;--docsifytabs-content-padding:1.5rem}.docsify-tabs:before,.docsify-tabs__tab{z-index:1}.docsify-tabs__tab--active,.docsify-tabs__tab:focus{z-index:2}.docsify-tabs{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;position:relative}.docsify-tabs:before{-ms-flex-order:0;content:"";-ms-flex:1 1;flex:1 1;order:0}.docsify-tabs__tab{-ms-flex-order:-1;appearance:none;font-size:inherit;margin:0;order:-1;position:relative}.docsify-tabs__content{height:0;overflow:hidden;position:absolute;visibility:hidden;width:100%}.docsify-tabs__content :first-child{margin-top:0}.docsify-tabs__content :first-child~:last-child,.docsify-tabs__content :last-child{margin-bottom:0}.docsify-tabs__tab--active+.docsify-tabs__content{height:auto;overflow:auto;position:relative;visibility:visible}[class*=docsify-tabs--]{margin:1.5em 0;margin:var(--docsifytabs-margin)}[class*=docsify-tabs--] .docsify-tabs__tab{background:#f8f8f8;background:var(--docsifytabs-tab-background);color:#999;color:var(--docsifytabs-tab-color);padding:.6em 1em;padding:var(--docsifytabs-tab-padding)}[class*=docsify-tabs--] .docsify-tabs__tab--active{background:inherit;background:var(--docsifytabs-tab-background--active);color:inherit;color:var(--docsifytabs-tab-color--active)}[class*=docsify-tabs--] .docsify-tabs__content{background:inherit;background:var(--docsifytabs-content-background);padding:1.5rem;padding:var(--docsifytabs-content-padding)}.docsify-tabs--classic .docsify-tabs__content,.docsify-tabs--classic .docsify-tabs__tab,.docsify-tabs--classic:before{border-color:#ededed;border-width:1px;border:var(--docsifytabs-border-px) solid var(--docsifytabs-border-color)}.docsify-tabs--classic:before{border-left-width:0;border-right-width:0;border-top-width:0;margin-right:1px;margin-right:var(--docsifytabs-border-px)}.docsify-tabs--classic .docsify-tabs__tab:first-of-type{border-top-left-radius:var(--docsifytabs-border-radius-px)}.docsify-tabs--classic .docsify-tabs__tab:last-of-type{border-top-right-radius:var(--docsifytabs-border-radius-px)}.docsify-tabs--classic .docsify-tabs__tab~.docsify-tabs__tab{margin-left:-1px;margin-left:calc(0px - var(--docsifytabs-border-px))}.docsify-tabs--classic .docsify-tabs__tab--active{border-bottom-width:0;box-shadow:inset 0 3px 0 0 var(--theme-color,currentColor);box-shadow:inset 0 var(--docsifytabs-tab-highlight-px) 0 0 var(--docsifytabs-tab-highlight-color)}.docsify-tabs--classic .docsify-tabs__content{border-radius:0;border-radius:0 var(--docsifytabs-border-radius-px) var(--docsifytabs-border-radius-px) var(--docsifytabs-border-radius-px);border-top:0;margin-top:-1px;margin-top:calc(0px - var(--docsifytabs-border-px))}.docsify-tabs--material .docsify-tabs__tab{background:transparent;border:0;margin-bottom:2px;margin-bottom:calc(var(--docsifytabs-tab-highlight-px) - var(--docsifytabs-border-px))}.docsify-tabs--material .docsify-tabs__tab--active{background:transparent;box-shadow:0 3px 0 0 var(--theme-color,currentColor);box-shadow:0 var(--docsifytabs-tab-highlight-px) 0 0 var(--docsifytabs-tab-highlight-color)}.docsify-tabs--material .docsify-tabs__content{border-color:#ededed;border-width:1px 0;border-bottom:var(--docsifytabs-border-px) solid var(--docsifytabs-border-color);border-left:0 solid var(--docsifytabs-border-color);border-right:0 solid var(--docsifytabs-border-color);border-top:var(--docsifytabs-border-px) solid var(--docsifytabs-border-color)}</style>
+  
+  <title>VS Code</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./Rewrap_website_files/vue.css">
+  <style>
+    td > pre {margin: 0 !important; padding: 0 !important}
+    td > pre > code {padding: 0 !important}
+  </style>
+<style>#cVim-command-bar, #cVim-command-bar-mode, #cVim-command-bar-input, #cVim-command-bar-search-results,
+.cVim-completion-item, .cVim-completion-item .cVim-full, .cVim-completion-item .cVim-left,
+.cVim-completion-item .cVim-right {
+  font-family: Helvetica, Helvetica Neue, Neue, sans-serif, monospace, Arial;
+  font-size: 10pt !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+#cVim-command-bar {
+  position: fixed;
+  z-index: 2147483646;
+  background-color: #1b1d1e;
+  color: #bbb;
+  display: none;
+  box-sizing: content-box;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+#cVim-command-bar-mode {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding-left: 2px;
+  height: 100%;
+  width: 10px;
+  padding-top: 2px;
+  color: #888;
+}
+
+#cVim-command-bar-input {
+  background-color: #1b1d1e;
+  color: #bbb;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: calc(100% - 10px);
+  position: absolute;
+}
+
+#cVim-command-bar-search-results {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2147483647;
+  left: 0;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+  background-color: #1c1c1c;
+}
+
+.cVim-completion-item, .cVim-completion-item .cVim-full, .cVim-completion-item .cVim-left, .cVim-completion-item .cVim-right {
+  text-overflow: ellipsis;
+  padding: 1px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.cVim-completion-item:nth-child(even) {
+  background-color: #1f1f1f;
+}
+
+.cVim-completion-item {
+  width: 100%; left: 0;
+  color: #bcbcbc;
+}
+
+.cVim-completion-item[active] {
+  width: 100%; left: 0;
+  color: #1b1d1e;
+  background-color: #f1f1f1;
+}
+
+.cVim-completion-item[active] span {
+  color: #1b1d1e;
+}
+
+.cVim-completion-item .cVim-left {
+  color: #fff;
+  width: 37%;
+}
+
+.cVim-completion-item .cVim-right {
+  font-style: italic;
+  color: #888;
+  width: 57%;
+}
+
+
+#cVim-link-container, .cVim-link-hint,
+#cVim-hud, #cVim-status-bar {
+  font-family: Helvetica, Helvetica Neue, Neue, sans-serif, monospace, Arial;
+  font-size: 10pt !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+#cVim-link-container {
+  position: absolute;
+  pointer-events: none;
+  width: 100%; left: 0;
+  height: 100%; top: 0;
+  z-index: 2147483647;
+}
+
+.cVim-link-hint {
+  position: absolute;
+  color: #302505 !important;
+  background-color: #ffd76e !important;
+  border-radius: 2px !important;
+  padding: 2px !important;
+  font-size: 8pt !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  border: 1px solid #ad810c;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  box-shadow: 2px 2px 1px rgba(0,0,0,0.25) !important;
+}
+
+.cVim-link-hint_match {
+  color: #777;
+  text-transform: uppercase !important;
+}
+
+
+#cVim-hud {
+  background-color: rgba(28,28,28,0.9);
+  position: fixed !important;
+  transition: right 0.2s ease-out;
+  z-index: 24724289;
+}
+
+#cVim-hud span {
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #8f8f8f;
+  font-size: 10pt;
+}
+
+#cVim-frames-outline {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 9999999999;
+  box-sizing: border-box;
+  border: 3px solid yellow;
+}
+</style></head>
+<body data-page="settings-vscode.md" class="ready sticky">
+  <a href="https://github.com/stkb/Rewrap" target="_blank" class="github-corner" aria-label="View source on Github"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><h1 class="app-name"><a class="app-name-link" data-nosearch="" href="https://stkb.github.io/Rewrap/">Rewrap</a></h1><div class="sidebar-nav"><ul><li><a href="https://stkb.github.io/Rewrap/#/features" title="Features">Features</a><ul><li><a href="https://stkb.github.io/Rewrap/#/auto-wrap" title="Auto-wrap">Auto-wrap</a></li></ul></li><li>Settings<ul><li class=""><a href="https://stkb.github.io/Rewrap/#/settings-vscode" title="VS Code">VS Code</a></li><li><a href="https://stkb.github.io/Rewrap/#/settings-visualstudio" title="Visual Studio">Visual Studio</a></li></ul></li><li>Keybindings <ul><li><a href="https://stkb.github.io/Rewrap/#/keybindings-vscode" title="VS Code">VS Code</a></li><li><a href="https://stkb.github.io/Rewrap/#/keybindings-visualstudio" title="Visual Studio">Visual Studio</a></li></ul></li><li><a href="https://stkb.github.io/Rewrap/#/prerelease-versions" title="Pre-release versions">Pre-release versions</a></li></ul></div></aside><section class="content"><article class="markdown-section" id="main"><h1 id="settings-vs-code"><a href="https://stkb.github.io/Rewrap/#/settings-vscode?id=settings-vs-code" data-id="settings-vs-code" class="anchor"><span>Settings: VS Code</span></a></h1><p>Add these settings to your <a href="https://code.visualstudio.com/docs/getstarted/settings" target="_blank" rel="noopener">user or workspace settings file</a>. (File -&gt; Preferences -&gt; Settings).</p><p>Additionally, all settings work as <a href="https://code.visualstudio.com/docs/getstarted/settings#_languagespecific-editor-settings" target="_blank" rel="noopener">language-specific settings</a> (<a href="https://stkb.github.io/Rewrap/#/settings-vscode?id=language-specific-settings">see below</a>).</p><h3 id="wrapping-width"><a href="https://stkb.github.io/Rewrap/#/settings-vscode?id=wrapping-width" data-id="wrapping-width" class="anchor"><span>Wrapping width</span></a></h3><p>You can set the column to wrap at directly with the <code>rewrap.wrappingColumn</code> setting. This takes precedence over other options.</p><pre v-pre="" data-lang="json5"><code class="lang-json5">{
+  // Wraps after 72 characters
+  "rewrap.wrappingColumn": 72
+}</code></pre><p>Alternatively, you <a href="https://stkb.github.io/Rewrap/#/settings-vscode?id=wrapping-to-rulers">can wrap to rulers</a>.</p><p>Thirdly, if neither of the above two settings are present, VS Code's <code>"editor.wordWrapColumn"</code> setting is used. This has a default of 80.</p><h3 id="wrapping-whole-or-parts-of-comments"><a href="https://stkb.github.io/Rewrap/#/settings-vscode?id=wrapping-whole-or-parts-of-comments" data-id="wrapping-whole-or-parts-of-comments" class="anchor"><span>Wrapping whole or parts of comments</span></a></h3><p>With <code>wholeComment:true</code> (default), Rewrap will wrap a whole comment block when a text cursor is inside it. This is how Rewrap has traditionally behaved.</p><pre v-pre="" data-lang="json5"><code class="lang-json5">{
+  "rewrap.wholeComment": true
+}</code></pre><img src="./Rewrap_website_files/wholeCommentTrue.png" width="400" alt="wholeComment: true">
+
+
+<p>But with <code>wholeComment:false</code>, Rewrap will only wrap that paragraph within the comment.</p><pre v-pre="" data-lang="json5"><code class="lang-json5">{
+  "rewrap.wholeComment": false
+}</code></pre><p><img src="./Rewrap_website_files/wholeCommentFalse.png" width="400" alt="wholeComment: false"><br>(Here the second paragraph is not wrapped)</p><p><strong>Note:</strong> This setting only affects empty selections. You can always manually select the lines to wrap.</p><h3 id="double-sentence-spacing"><a href="https://stkb.github.io/Rewrap/#/settings-vscode?id=double-sentence-spacing" data-id="double-sentence-spacing" class="anchor"><span>Double sentence spacing</span></a></h3><p>The wrap/fill commands in Vim and Emacs have another feature, where if lines end with a period (or ? or !), two spaces will be added after that sentence when the paragraph is re-wrapped. This is not enabled by default, but you can enable it with a setting.</p><pre v-pre="" data-lang="json5"><code class="lang-json5">{
+  "rewrap.doubleSentenceSpacing": true
+}</code></pre><h3 id="reformat-experimental"><a href="https://stkb.github.io/Rewrap/#/settings-vscode?id=reformat-experimental" data-id="reformat-experimental" class="anchor"><span>Reformat (experimental)</span></a></h3><p>This is an experimental setting that reformats paragraph indents when wrapping. <a href="https://github.com/stkb/Rewrap/blob/master/specs/Detail/Indents-Reformat.md" target="_blank" rel="noopener">More info here</a>.</p><h2 id="language-specific-settings"><a href="https://stkb.github.io/Rewrap/#/settings-vscode?id=language-specific-settings" data-id="language-specific-settings" class="anchor"><span>Language-specific settings</span></a></h2><p>This example sets the wrapping at column 72 for Python, with doubleSentenceSpacing on, and the wrapping column at 90 for Javascript.</p><pre v-pre="" data-lang="json5"><code class="lang-json5">{
+  "[python]": {
+    "editor.rulers": [72, 79],
+    "rewrap.doubleSentenceSpacing": true
+  },
+
+  "[javascript]": {
+    "editor.rulers": [90]
+  }
+}</code></pre><p>VS Code has a helper command for adding language sections to your settings file: press F1 and search for <code>Preferences: Configure Language Specific Settings...</code>.</p><p>Notes:</p><ul><li>Language-specific settings for extensions are not officially supported in vscode yet, so you will get some warnings in the settings.json file, but it will still work.</li><li>Be aware that a global <code>rewrap.wrappingColumn</code> setting will take precedence over a language-specific <code>editor.rulers</code> setting.</li></ul><h2 id="wrapping-to-rulers"><a href="https://stkb.github.io/Rewrap/#/settings-vscode?id=wrapping-to-rulers" data-id="wrapping-to-rulers" class="anchor"><span>Wrapping to rulers</span></a></h2><p>To enable wrapping to rulers, the <code>rewrap.wrappingColumn</code> setting must <strong>not</strong> be set.</p><p>If you have a ruler set up in VS Code, Rewrap will wrap to that ruler. If you have multiple rulers, you can choose which ruler to wrap to while editing.</p><img src="./Rewrap_website_files/rulers1.gif" width="700" alt="cycles through rulers">
+
+<p>Just press Alt+Q multiple times to wrap to each ruler in turn. The ruler chosen is then remembered for that document for the rest of the session. It cycles through the rulers in the order in which they appear in settings; so if you have a most commonly used ruler, you probably want to put that first.</p><pre v-pre="" data-lang="json5"><code class="lang-json5">{
+  "editor.rulers": [80, 72, 100]
+}</code></pre><p>Like all other settings, rulers can also be set per-language.</p></article></section></main>
+  <script>
+    window.$docsify = {
+      name: 'Rewrap',
+      repo: 'stkb/Rewrap',
+      loadSidebar: true,
+      noEmoji: true,
+      tabs: { tabComments: false, theme: 'classic' }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="./Rewrap_website_files/docsify@4"></script>
+  <!-- docsify-tabs (latest v1.x.x) -->
+  <script src="./Rewrap_website_files/docsify-tabs@1"></script>
+
+
+<div class="progress" style="opacity: 0; width: 0%;"></div></body><div id="cVim-status-bar" style="top: 0px;"></div><iframe src="./Rewrap_website_files/cmdline_frame.html" id="cVim-command-frame"></iframe></html>

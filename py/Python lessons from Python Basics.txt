@@ -1,0 +1,315 @@
+** < comment 
+// // < Title or Comment
+e.g. < example 
+*Enter or *E < Calling out 
+*Run or *r or F5 or f5 < Run in shell 
+>>> < New line
+--- < New line but empty in python 
+Alt+3 < Comment out region 
+
+// Lists // 
+
+** List is a class in python. It's a powerful tool 
+** dir(new) < if you want to see what tools you can use in python 
+
+>>>new = [] < Assigning "new" to empty list "[]"
+
+>>>new.append("Scott")
+>>>new.append("Sally")
+>>>new.append("Jonny")
+
+** There must be parentheses and quotation marks when use append 
+** Punctuation marks are important 
+** ' < apotropher
+** * < Asterix
+** - < Hyphen 
+
+>>>new *Enter
+['Scott', 'Sally', 'Jonny']
+
+** Use loop tool
+
+>>>for name in new:
+	print(name) *Enter
+
+Scott
+Sally
+Jonny
+
+** Same thing when using other variable e.g. "i" or "j" or whatever you like but the variable must reflect on the other line
+
+>>>for i in new:
+	print(i) *Enter
+
+Scott
+Sally 
+Jonny
+
+>>>for i in new: 
+	print("Hi " + i + " nice to meet you.") *Enter
+
+Hi Scott nice to meet you.
+Hi Sally nice to meet you.
+>>>
+
+
+// Nested loops //
+
+** for loops starts witht the word "for" - "in" - 
+
+>>>for i in range(5): <<<<
+	print(i) *Enter
+0
+1
+2
+3
+4
+
+
+** To comment things out press Alt+3 
+
+e.g. 
+
+>>>for i in range(5): 
+	print (i, end = "") *Enter
+
+01234
+
+e.g. 
+
+>>>for i in range(5):
+	print (i, end = " ") *Enter // Be careful there is a space between the double quotes //
+
+0 1 2 3 4
+
+
+>>>for i in range(5):
+	for j in range(i):
+	print(j) *Enter // This is an example of nested loops // // "for" inside "for" //
+
+0
+0
+1
+0
+1
+2
+0
+1
+2
+3
+
+>>>for i in range(1,6): < starting and ending points 1 to 6
+	for j in range(i):
+	print(j, end = "")
+		print() *Enter // there is a space or tab between the two "prints" words // 
+
+0
+01
+012
+0123
+01234
+
+** what "range" keyword (it's purple color)?? just like print word
+
+
+>>>for i in range(1,6):
+	for j in range(i):
+	print(j, end = "")
+	print() *Enter // there is NO space or tab between the two "prints" words // 
+0
+0
+0
+1
+0
+1
+2
+0
+1
+2
+3
+0
+1
+2
+3
+4
+
+** Indentation is a VERY important in python (SPACES) be careful! 
+
+
+// Functions // 
+
+>>>def new_line(): // There must be colon and parenthesis at the end of funtion // 
+print() * Enter
+----
+
+>>>def three_line():
+	new_line()
+	new_line()
+	new_line()
+
+three_line() *Enter
+----
+----
+----
+
+>>>def nine_line():
+	three_line()
+	three_line()
+	three_line() *Enter // You already defined "three_line()" to be 3 empty lines in Python so 3*3=9 //
+
+nine_line() << calling the function all the way back to the start after defining it
+----
+----
+----
+----
+----
+----
+----
+----
+----
+
+
+** Whene pressing enter go one backspace after that so Python knows you are calling the function and not adding another information
+** Also Tab and space ARE not the same 
+** orange colored words are predefined keywords in Python 
+>>>
+
+// Conditional statements True-False // 
+
+>>> 5 > 8 *Enter
+False
+>>> 8 > 5 *E
+True
+
+>>> if 5 < 8: // Colon is must be at the end 
+	print("Yes") *E
+
+Yes
+
+>>> if 8 < 5:
+	print("Yes") *E
+
+// nothing happened // 
+
+>>> if 5 < 8: 
+	print("No") *E
+
+No
+
+>>> 5 == 5 *E
+True
+>>> 5 == 6 *E
+False
+>>> 5 != 6 
+True
+>>> 6 != 6
+False
+>>> 5 <= 6 
+True
+>>> 6 >= 1 
+True
+
+** booleans is just a term means true or false 
+** > < == Are tests 
+** != Not equal 
+** <= less than or equal to 
+** >= Greater than or equal to 
+
+// Conditional statements - nested if -else part 2 // 
+
+>>> if 5 < 8:
+	print("Yes") *E
+Yes
+
+>>> if 5 < 8:
+	print("Yes") // To continue the statement pree enter and go back one backspace DONT tab and backspace //
+else:
+	print("No") 
+	
+No
+
+
+** Purple colored words mean funtion words and that means need parenthesis
+** Orange is a keyword in Python
+
+
+// part 3 // 
+** In this part will test if a number is positive or negative 
+** To create a function in Py type "def" // oranag colored word - keyword //
+** handy-dandy 
+
+>>> def num(x): 
+	if x > 0: 
+		print("positive")
+	else:
+		print("negative") *run *r *f5
+
+
+>>> in the shell
+>>> num(6) *e
+positive
+>>> num(678) *e
+positive
+>>> num(-65) *e
+negative
+>>> num(0)
+negative // must be corrected in the script // go back to script and add another statment // 
+
+>>> def num(x): 
+	if x == 0: 
+		print("is 0")
+	else:
+		if x > 0: // be careful of COLON after if and else words // 
+			print("positive")
+	else:
+		print("negative") *r
+
+
+// Functions with return //
+
+
+>>> def num(x): 
+	print(x)
+
+>>> num(4)
+4
+>>> def num_1(y):
+	return y 
+>>> num_1(4)
+4
+
+** The difference between "print" and "return" is "print" (show) but "return" (create)
+
+>>> num(4) *2
+TypeError: num(x) has no return value 
+
+>>> num_1(4) * 2
+8 // when typed num_1(4) and NOT num(4) is num_1(x) has "return" value but num(x) has not and only "print" function
+
+>>> def word(string): 
+	return string
+
+>>> word("Sam") *e
+'Sam' // Not an accurate way //
+
+>>> print(word("Sam")) *e
+Sam // This is an accurate way //
+
+>>> def word_ed(string):
+	return string + "ed"
+
+** "+" plus sign in Python is a concatenate functino // add stuff // 
+
+>>> print(word_ed("jump")) *e
+Jumped 
+
+** You can use directly word_ed("jump")) but will put the result in '' 
+** However, using "print" function instead will give a clean result 
+
+
+// Why elif // 
+
+
+
+
+
